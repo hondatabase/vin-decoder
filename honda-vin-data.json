@@ -1,0 +1,278 @@
+{
+  "1973-1980": {
+    "type": "chassisNumber",
+    "positions1_2": {
+      "title": "Car Line & Engine",
+      "description": "Refers to chassis code list"
+    },
+    "position3": {
+      "title": "Body Type & Transmission",
+      "codes": {
+        "A": "2 Door, 4 Speed Manual",
+        "B": "2 Door, 2 Speed Automatic",
+        "C": "3 Door, 4 Speed Manual",
+        "D": "3 Door, 2 Speed Automatic",
+        "E": "3 Door, 5 Speed Manual",
+        "F": "2 Door, 5 Speed Manual",
+        "G": "3 Door LX, 2 Speed Automatic",
+        "H": "3 Door LX, 5 Speed Manual",
+        "J": "4 Door, 5 Speed Manual",
+        "K": "4 Door, 2 Speed Automatic"
+      }
+    },
+    "position4": {
+      "title": "Generation Year",
+      "codes": {
+        "1": "First",
+        "2": "Second",
+        "3": "Third",
+        "4": "Fourth",
+        "5": "Fifth",
+        "6": "Sixth",
+        "7": "Seventh"
+      }
+    },
+    "positions5_10": {
+      "title": "Serial Number",
+      "description": "Sequential starting from 000001"
+    }
+  },
+  "1981-present": {
+    "type": "vin",
+    "wmiMethods": {
+      "method1": {
+        "position1": {
+          "title": "Nation of Origin",
+          "codes": {
+            "1": "USA",
+            "2": "Canada",
+            "3": ["Mexico", "Costa Rica", "Cayman Islands"],
+            "4": "USA",
+            "5": "USA",
+            "6": "Australia",
+            "7": "New Zealand",
+            "8": ["Argentina", "Chile", "Ecuador", "Peru", "Venezuela"],
+            "9": ["Brazil", "Colombia", "Paraguay", "Uruguay", "Trinidad & Tobago"],
+            "A": ["South Africa", "Ivory Coast"],
+            "B": ["Angola", "Kenya", "Tanzania"],
+            "C": ["Benin", "Madagascar", "Tunisia"],
+            "D": ["Egypt", "Morocco", "Zambia"],
+            "E": ["Ethiopia", "Mozambique"],
+            "F": ["Ghana", "Nigeria"],
+            "J": "Japan",
+            "K": ["Sri Lanka", "Israel", "South Korea"],
+            "L": "China",
+            "M": ["India", "Indonesia", "Thailand"],
+            "N": ["Pakistan", "Turkey"],
+            "P": ["Philippines", "Singapore", "Malaysia"],
+            "R": ["United Arab Emirates", "Taiwan", "Vietnam"],
+            "S": ["Great Britain", "Germany", "Poland"],
+            "T": ["Switzerland", "Czech Republic", "Hungary", "Portugal"],
+            "U": ["Denmark", "Ireland", "Romania", "Slovakia"],
+            "V": ["Austria", "France", "Spain", "Yugoslavia", "Croatia", "Estonia"],
+            "W": "Germany",
+            "X": ["Bulgaria", "Greece", "Netherlands", "Russia", "Luxembourg"],
+            "Y": ["Belgium", "Finland", "Malta", "Sweden", "Norway", "Belarus", "Ukraine"],
+            "Z": ["Italy", "Slovenia", "Lithuania"]
+          }
+        },
+        "position2": {
+          "title": "Manufacturer",
+          "codes": {
+            "H": "Honda"
+          }
+        },
+        "position3": {
+          "title": "Vehicle Type",
+          "codes": {
+            "F": "Honda Motorcycle, Built in USA",
+            "G": "Honda Passenger Vehicle, Built in USA/Canada/Mexico/China",
+            "H": ["Acura Passenger Vehicle, Built in Canada", "Honda Passenger Vehicle, Built in UK"],
+            "J": "Honda Light Duty Truck, Built in Canada",
+            "K": "Honda Multi-purpose passenger vehicle, Built in Canada",
+            "L": "Honda Multi-purpose passenger vehicle, Built in Japan",
+            "M": "Honda Passenger Vehicle, Built in Japan",
+            "N": ["Honda Multi-purpose passenger vehicle, Built in USA", "Acura Multi-purpose passenger vehicle, Built in Canada"],
+            "P": "Honda Light Duty Truck, Built in USA",
+            "R": "Honda Passenger Vehicle, Built in Indonesia",
+            "S": "Honda Passenger Vehicle, Built in UK",
+            "1": "Honda Motorcycle, Built in Mexico",
+            "2": "Honda Motorcycle, Built in Japan",
+            "3": "Honda ATV, Built in Japan",
+            "4": "Acura Passenger Vehicle, Built in Japan"
+          }
+        }
+      },
+      "method2": {
+        "positions1_3": {
+          "title": "Complete WMI Codes",
+          "codes": {
+            "LUC": "Honda Automobile (China)",
+            "MRH": "Honda Automobile (Thailand)",
+            "RKT": "Honda Automobile (Taiwan)",
+            "VTM": "Honda Motorcycle (Spain)",
+            "YC1": "Honda Motorcycle (Belgium)",
+            "ZDC": "Honda Motorcycle (Italy)",
+            "19U": "Acura CL & TL (1999+)",
+            "478": "Honda ATV (USA)",
+            "4S6": "Honda Passport (All)",
+            "5FN": "Honda Odyssey (2002+) & Pilot (2005+)",
+            "5FP": "Honda Ridgeline (2009+)",
+            "5J6": "Honda Element (All) and Honda CR-V",
+            "5J8": "Acura RDX (All)",
+            "93H": "Honda Automobile (Brazil)",
+            "9C2": "Honda Motorcycle (Brazil)"
+          }
+        }
+      }
+    },
+    "vds": {
+      "1981-1986": {
+        "positions4_5": {
+          "title": "Car Line & Engine",
+          "description": "Refers to chassis code list"
+        },
+        "position6": {
+          "title": "Transmission Type",
+          "codes": {
+            "2": "Semi-Hondamatic",
+            "3": "3 Speed Automatic",
+            "4": "4 Speed Manual",
+            "5": "5 Speed Manual",
+            "6": "6 Speed Manual (5 Speed Manual w/ Super Low Gear)",
+            "7": "4 Speed Automatic"
+          }
+        },
+        "position7": {
+          "title": "Body Type",
+          "codes": {
+            "2": "2-door Coupe",
+            "3": "3-door Hatchback",
+            "4": "4-door Sedan",
+            "5": "5-door Wagon"
+          }
+        }
+      },
+      "1987-2009": {
+        "positions4_6": {
+          "title": "Car Line & Engine",
+          "description": "Combined chassis code"
+        },
+        "position7": {
+          "title": "Body Type & Transmission",
+          "codes": {
+            "1": ["2 Door Convertible, Manual", "2 Door Coupe, Manual"],
+            "2": "2 Door Coupe, Automatic or CVT",
+            "3": "3 Door Hatchback, Manual",
+            "4": "3 Door Hatchback, Automatic or CVT",
+            "5": "4 Door Sedan, Manual",
+            "6": ["4 Door Sedan, Automatic or CVT", "4 Door Truck, Automatic or CVT"],
+            "7": ["5 Door Wagon, Manual", "5 Door SUV, Manual"],
+            "8": ["5 Door Wagon, Automatic or CVT", "5 Door Minivan, Automatic or CVT", "5 Door SUV, Automatic or CVT"]
+          }
+        }
+      },
+      "2010-present": {
+        "positions4_6": {
+          "title": "Car Line & Engine",
+          "description": "Combined chassis code"
+        },
+        "position7": {
+          "title": "Body Type & Transmission",
+          "codes": {
+            "A": ["2 Door Convertible, Manual", "2 Door Coupe, Manual"],
+            "B": "2 Door Coupe, Automatic or CVT",
+            "C": "3 Door Hatchback, Manual",
+            "D": "3 Door Hatchback, Automatic or CVT",
+            "E": "4 Door Sedan, Manual",
+            "F": ["4 Door Sedan, Automatic or CVT", "4 Door Truck, Automatic or CVT"],
+            "G": ["5 Door Wagon, Manual", "5 Door SUV, Manual"],
+            "H": ["5 Door Wagon, Automatic or CVT", "5 Door Minivan, Automatic or CVT", "5 Door SUV, Automatic or CVT"]
+          }
+        }
+      }
+    },
+    "position8": {
+      "title": "Grade - Trim Level"  
+    },
+    "position9": {
+      "title": "Check Digit"
+    },
+    "vis": {
+      "position10": {
+        "title": "Model Year",
+        "note": "I, O, Q, U, Z, and 0 are not used",
+        "codes": {
+          "A": ["1980", "2010"],
+          "B": "1981",
+          "C": "1982",
+          "D": "1983",
+          "E": "1984",
+          "F": "1985",
+          "G": "1986",
+          "H": "1987",
+          "J": "1988",
+          "K": "1989",
+          "L": "1990",
+          "M": "1991",
+          "N": "1992",
+          "P": "1993",
+          "R": "1994",
+          "S": "1995",
+          "T": "1996",
+          "V": "1997",
+          "W": "1998",
+          "X": "1999",
+          "Y": "2000",
+          "1": "2001",
+          "2": "2002",
+          "3": "2003",
+          "4": "2004",
+          "5": "2005",
+          "6": "2006",
+          "7": "2007",
+          "8": "2008",
+          "9": "2009"
+        }
+      },
+      "position11": {
+        "title": "Assembly Plant",
+        "codes": {
+          "A": "Marysville, Ohio, USA",
+          "B": ["Lincoln, Alabama, USA", "Aalst, Belgium"],
+          "C": ["Alliston, Ontario, Canada", "Saitama or Sayama, Japan"],
+          "D": "Guadalajara, Mexico",
+          "E": ["Greensburg, Indiana, USA", "Montesa, Spain"],
+          "F": ["Atessa, Italy", "Ping Tung Factory, Taiwan"],
+          "H": "Alliston, Ontario, Canada",
+          "J": "Karawang Factory, Indonesia",
+          "K": "Kumamoto, Japan",
+          "L": "East Liberty, Ohio, USA",
+          "M": "Hamamatsu, Japan",
+          "P": "Ayutthaya Factory, Thailand",
+          "R": "Manaus, Brazil",
+          "S": "Suzuka, Japan",
+          "T": "Tochigi, Japan",
+          "U": "Swindon, England",
+          "X": "El Salto, Mexico",
+          "Z": "Sao Paulo, Brazil",
+          "1": "Manaus, Brazil",
+          "2": "Guangzhou Factory, China",
+          "3": "Huangpu Guangzhou Factory, China",
+          "4": "Timmonsville, South Carolina, USA"
+        }
+      },
+      "positions12_17": {
+        "title": "Production Sequence Number",
+        "description": "Sequential starting from 000001",
+        "notes": [
+          "Position 12 can vary based on market",
+          "CDM Preludes 1997-2001 start with 8",
+          "Canadian models start at 800000",
+          "Position 12 can be letter or number in US",
+          "Positions 13-17 must be numbers"
+        ]
+      }
+    }
+  }
+}

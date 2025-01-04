@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Honda VIN and Chassis Number Decoder - Part of the Hondatabase Project">
+	<meta property="og:title" content="Honda VIN/Chassis Decoder | Hondatabase">
+	<meta property="og:description" content="Decode Honda Vehicle Identification Numbers and Chassis Numbers">
+	<meta property="og:url" content="https://vin-decoder.hondatabase.com">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<title>Honda VIN/Chassis Decoder | Hondatabase</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Honda VIN/Chassis Decoder</h1>
+
+	<div id="intro">
+		<p>Just as every person has unique fingerprints, every vehicle carries its own distinctive identifier - the
+			Vehicle Information Number, commonly known as VIN.</p>
+
+		<p>This unique sequence serves as your vehicle's DNA, revealing crucial details about its origins: from its
+			manufacturing location and year of production to specific features like body type and trim specifications.
+		</p>
+
+		<p>Understanding how to decode this vital information helps ensure accuracy when searching for compatible parts
+			or researching vehicle history.</p>
+	</div>
+
+	<details id="vin-location">
+		<summary>Where to find your VIN?</summary>
+		<div id="image-grid">
+			<figure>
+				<img src="https://cimg3.ibsrv.net/cimg/www.honda-tech.com/1066x800_85/731/doorjambVinLocation-38731.jpg" alt="VIN in doorjamb">
+				<figcaption>Driver's side doorjamb</figcaption>
+			</figure>
+			<figure>
+				<img src="https://cimg1.ibsrv.net/cimg/www.honda-tech.com/1066x800_85/729/hondWindowVinLocation-38729.jpg" alt="VIN in windshield">
+				<figcaption>Driver's side windshield base</figcaption>
+			</figure>
+		</div>
+		<p>The VIN can be found in one of these two locations:</p>
+		<ul>
+			<li>On a sticker in the driver's side doorjamb</li>
+			<li>Stamped at the base of the windshield on the driver's side</li>
+		</ul>
+		<small id="attribution">Images from <a href="https://honda-tech.com/how-tos/a/honda-vin-decoding-and-chassis-codes-374602">Honda VIN Decoding and Chassis Codes</a> by Honda-Tech</small>
+	</details>
+
+	<div id="input-group">
+		<input type="text" id="vinInput" placeholder="Enter VIN or Chassis Number" maxlength="17">
+		<button onclick="loadDemo()" id="demoButton">Load Demo</button>
+	</div>
+
+	<div id="vinDisplay"></div>
+
+	<div class="legend legend-17">
+		<div class="legend-item" data-section="wmi"><span></span>1: Country</div>
+		<div class="legend-item" data-section="wmi"><span></span>2: Manufacturer</div>
+		<div class="legend-item" data-section="wmi"><span></span>3: Type</div>
+		<div class="legend-item" data-section="vds"><span></span>4: Series</div>
+		<div class="legend-item" data-section="vds"><span></span>5: Series</div>
+		<div class="legend-item" data-section="vds"><span></span>6: Series</div>
+		<div class="legend-item" data-section="vds"><span></span>7: Body/Trans</div>
+		<div class="legend-item" data-section="vds"><span></span>8: Grade</div>
+		<div class="legend-item" data-section="vds"><span></span>9: Check</div>
+		<div class="legend-item" data-section="vis"><span></span>10: Year</div>
+		<div class="legend-item" data-section="vis"><span></span>11: Plant</div>
+		<div class="legend-item" data-section="vis"><span></span>12-17: Serial</div>
+	</div>
+
+	<div class="legend legend-10">
+		<div class="legend-item" data-section="pre"><span></span>1-2: Car Line</div>
+		<div class="legend-item" data-section="pre"><span></span>3: Engine</div>
+		<div class="legend-item" data-section="pre"><span></span>4: Body/Trans</div>
+		<div class="legend-item" data-section="pre"><span></span>5-10: Serial</div>
+	</div>
+
+	<div id="result"></div>
+
+	<footer>
+		<p>Part of <a href="https://hondatabase.com">Hondatabase</a></p>
+		<p>Created by <a href="https://github.com/VIRUXE">VIRUXE</a></p>
+		<p><a href="https://github.com/hondatabase/vin-decoder">View on GitHub</a></p>
+		<p>References:
+			<a href="https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Honda/VIN_Codes">Wikibooks</a>,
+			<a href="https://honda-tech.com/forums/honda-prelude-4/decoding-vin-all-models-1983-a-2616666-printthread/">Honda-Tech</a>
+		</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
